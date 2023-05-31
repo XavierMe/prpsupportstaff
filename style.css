@@ -104,3 +104,45 @@ button#copy-button {
 button#copy-button:hover {
   background-color: #037e4b;
 }
+
+button#denied {
+  display: block;
+  float: right;
+  width: 15%;
+  height: 40px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #d36b09;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button#denied:hover {
+  background-color: #e97a13;
+}
+
+button#aidenied {
+  display: block;
+  float: right;
+  width: 15%;
+  height: 40px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #d36b09;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button#aidenied:hover {
+  background-color: #e97a13;
+}
