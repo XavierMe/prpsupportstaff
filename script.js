@@ -10,6 +10,8 @@ const bttn8 = document.getElementById('bttn8');
 const bttn9 = document.getElementById('bttn9');
 const bttn10 = document.getElementById('bttn10');
 const bttn11 = document.getElementById('bttn11');
+const bttn12 = document.getElementById('bttn11');
+const bttn13 = document.getElementById('bttn11');
 const defaultMsg = `Hello @, thank you for taking the time to submit an allowlist application with us! Your application is currently pending alterations, as not all of your responses currently meet our criteria for allowlisting. Before we can accept your application we would like you to amend your responses to the following:
 
 
@@ -130,3 +132,50 @@ bttn9.addEventListener('click', () => {
     **Please confirm to report any rule break your encounter either by doing /a in game or opening a ticket in discord**
     `;
   });
+
+
+
+  
+
+// Add event listeners to the "Copy" buttons
+document.getElementById("denied").addEventListener("click", function() {
+  copyText`Hello @ , thank you again for taking the time to apply for allowlisting.
+
+Unfortunately your application has been denied at this time, but we encourage you to submit a new application in **7 days.** Please take the time to re-read our rules and submit a Support Ticket if you have any questions.
+  
+We sincerely hope your next application is successful!
+  `;
+});
+
+document.getElementById("aidenied").addEventListener("click", function() {
+  copyText `Hello @, appreciate your interest in joining  ProductionRP. After careful review and consideration, we regret to inform you that your application for allowlist access has been denied.
+
+Our allowlist program aims to maintain a controlled and secure environment for our community members. As part of our evaluation process, we carefully assess the use of various technologies and tools. Unfortunately, after a thorough assessment, we have determined that the use of AI in the context of ProductionRP does not align with our current guidelines and objectives.
+  
+We understand the potential benefits that AI can offer, but we have decided to prioritize other approaches that align more closely with our vision for the community. This decision was made after careful consideration of the impact on user experience, security, and the overall integrity of the platform.
+  
+We sincerely appreciate the effort you put into your application and your interest in contributing to the ProductionRP community. While we are unable to proceed with your application at this time, we encourage you to explore alternative avenues for involvement within the community.
+  
+Thank you for your understanding. We wish you the best in your future endeavors.
+  
+You may reapply in **7 days**.`
+});
+
+function copyText(textToCopy) {
+  // Create a temporary textarea element to hold the text
+  var tempTextArea = document.createElement("textarea");
+  tempTextArea.value = textToCopy;
+
+  // Append the textarea to the DOM
+  document.body.appendChild(tempTextArea);
+
+  // Select the text within the textarea
+  tempTextArea.select();
+  tempTextArea.setSelectionRange(0, 99999); // For mobile devices
+
+  // Copy the selected text to the clipboard
+  document.execCommand("copy");
+
+  // Remove the temporary textarea
+  document.body.removeChild(tempTextArea);
+}
