@@ -10,8 +10,8 @@ const bttn8 = document.getElementById('bttn8');
 const bttn9 = document.getElementById('bttn9');
 const bttn10 = document.getElementById('bttn10');
 const bttn11 = document.getElementById('bttn11');
-const bttn12 = document.getElementById('bttn11');
-const bttn13 = document.getElementById('bttn11');
+const bttn12 = document.getElementById('bttn12');
+const bttn13 = document.getElementById('bttn13');
 const defaultMsg = `Hello @, thank you for taking the time to submit an allowlist application with us! Your application is currently pending alterations, as not all of your responses currently meet our criteria for allowlisting. Before we can accept your application we would like you to amend your responses to the following:
 
 
