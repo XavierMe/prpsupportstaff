@@ -141,8 +141,8 @@ bttn9.addEventListener('click', () => {
 document.getElementById("denied").addEventListener("click", function() {
   copyText`Hello @ , thank you again for taking the time to apply for allowlisting.
 
-Unfortunately your application has been denied at this time, but we encourage you to submit a new application in **7 days.** Please take the time to re-read our rules and submit a Support Ticket if you have any questions.
-  
+Unfortunately your application has been denied at this time due to the lack of effort. We are looking for more in depth, detailed answers showing you understand the rules and what we expect when it comes to role playing in this server. Take this time to put some thought into your answers if you wish to reapply. We encourage you to submit a new application in 7 days. Also, please take the time to re-read our rules and submit a Support Ticket if you have any questions. 
+
 We sincerely hope your next application is successful!
   `;
 });
