@@ -93,7 +93,7 @@ bttn7.addEventListener('click', () => {
 bttn8.addEventListener('click', () => {
     mainInput.value += `
     > 10. You have just left BurgerShot when two individuals approach you with weapons and demand that you hand over your order, so you do. Later, you are walking with three of your friends and pass the same two individuals sitting alone at Legion Square, where they begin to tease you in regards to the BurgerShot robbery. How do you proceed?:
-    **Please elaborate on your response to show the quality of roleplay interactions that are expected of our players. (If necessary specify that we want to put roleplay > gunplay/PVP at all times)**    
+    **Please elaborate on your response to show the quality of roleplay interactions that are expected of our players. (we want to put roleplay > gunplay/PVP at all times)**    
     `;
   });
 bttn9.addEventListener('click', () => {
