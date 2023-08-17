@@ -99,7 +99,7 @@ bttn8.addEventListener('click', () => {
 bttn9.addEventListener('click', () => {
     mainInput.value += `
     > 11. You're new to the city and a shady looking guy offers to sell you a cheap car in cash only. Later while driving, you are pulled over by the police and are detained because the car is stolen. What do you say to try to talk your way out of jail?:
-    **Please elaborate on your response to show the quality roleplay interactions that are expected of our players. (If necessary specify that we want to put roleplay > gunplay/PVP at all times)**
+    **Please elaborate on your response to show the quality roleplay interactions that are expected of our players. (we want to put roleplay > gunplay/PVP at all times)**
     `;
   });
   bttn10.addEventListener('click', () => {
