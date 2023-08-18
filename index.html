@@ -1,16 +1,36 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Number Click Game</title>
-<link rel="stylesheet" href="styles.css">
-</head>
-<body>
-<div class="game-container" id="game-container"></div>
-<div class="target-number" id="target-number"></div>
-<div class="incorrect-clicks" id="incorrect-clicks">Incorrect Clicks: 0</div> <!-- Added this line -->
-<script src="script.js"></script>
-<script src="https://kit.fontawesome.com/f960273d93.js" crossorigin="anonymous"></script>
-</body>
+<html>
+  <head>
+    <title>PRP Application Amendments</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+    <div class="button-container">
+      <button id="bttn1">Rules</button>
+      <button id="bttn2">Provide Good RP</button>
+      <button style="background-color: #043742" id="bttn3">Understand Powergaming</button>
+      <button style="background-color: #043742" id="bttn4">Understand NVL</button>
+      <button id="bttn5">Back Story | Fits Rules</button>
+      <button id="bttn6">Back Story | Elaborate</button>
+      <button id="bttn7">Accomplish In City</button>
+      <button id="bttn8">Left Burgershot</button>
+      <button id="bttn9">Selling Illegal Car</button>
+      <button id="bttn10">Prison Emote | Interactions</button>
+      <button style="background-color: #043742" id="bttn11">Prison Emote | Report To Staff</button>
+      <hr>
+       <button id="bttn12">Back Story | Both</button>
+       <button id="bttn13">Prison Escapte | Both</button>
+    </div>
+      <div class="text-container">
+        <div class="top-buttons">
+          <button id="copy-button" onClick="main-input();">Copy</button>
+          <button id="denied" >Denied (auto copy) </button>
+          <button id="aidenied" >AI Denied (auto copy) </button>
+          <button id="clear-button" onClick="window.location.reload();" >Clear</button>
+        </div>
+        <textarea readonly id="main-input"></textarea>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>
