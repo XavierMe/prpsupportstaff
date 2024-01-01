@@ -47,7 +47,7 @@ mainInput.value = defaultMsg;
 
 bttn1.addEventListener('click', () => {
   mainInput.value += `
-    > 2. Please link both sets of our rules to confirm you have read, understood and agree to follow them.
+    > 2. Please link our set of rules to confirm you have read, understood, and agree to follow them
   **Please ensure that you have included both sets of rules.**
   `;
 });
