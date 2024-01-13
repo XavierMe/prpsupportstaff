@@ -1,9 +1,13 @@
 body {
+  margin: 0;
+  padding: 0;
   background-color: #021b21;
 }
 
 .container {
   display: flex;
+  flex-direction: column; 
+  position: relative;
 }
 
 .button-container {
@@ -11,23 +15,23 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 30%;
+  width: 100%; 
 }
 
 .button-container button {
-    display: block;
-    width: 90%;
-    height: 40px;
-    margin-bottom: 10px;
-    border-radius: 10px;
-    border: none;
-    background-color: #0b505f;
-    color: white;
-    font-size: 16px;
-    font-weight: bold;
-    font-family: Arial, sans-serif;
-    cursor: pointer;
-    transition: background-color 0.2s ease;
+  display: block;
+  width: 90%;
+  height: 40px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  border: none;
+  background-color: #0b505f;
+  color: white;
+  font-size: 1.3em; 
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
 }
 
 .button-container button:hover {
@@ -40,7 +44,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 80%;
+  width: 100%; 
   padding: 20px;
 }
 
@@ -54,13 +58,13 @@ body {
 
 textarea {
   width: 100%;
-  height: 80vh;
+  height: 60vh; 
   padding: 10px;
   border-radius: 15px;
   border: 1px solid #021b21;
   background-color: #052127;
   color: white;
-  font-size: 16px;
+  font-size: 1.3em; 
   resize: none;
 }
 
@@ -106,6 +110,7 @@ button#copy-button:hover {
 }
 
 button#denied {
+  font-size: 1em; 
   display: block;
   float: right;
   width: 15%;
@@ -115,7 +120,6 @@ button#denied {
   border: none;
   background-color: #d36b09;
   color: white;
-  font-size: 16px;
   font-weight: bold;
   font-family: Arial, sans-serif;
   cursor: pointer;
@@ -127,6 +131,7 @@ button#denied:hover {
 }
 
 button#aidenied {
+  font-size: 1em; 
   display: block;
   float: right;
   width: 15%;
@@ -136,7 +141,6 @@ button#aidenied {
   border: none;
   background-color: #d36b09;
   color: white;
-  font-size: 16px;
   font-weight: bold;
   font-family: Arial, sans-serif;
   cursor: pointer;
@@ -145,4 +149,67 @@ button#aidenied {
 
 button#aidenied:hover {
   background-color: #e97a13;
+}
+
+
+hr {
+  border: none;
+  border-top: 1px solid #fff;
+  width: 90%;
+  margin: 10px auto;
+  padding-bottom: 10px;
+}
+
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #021b21; 
+  border-radius: 3px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #eeaf30; 
+  border-radius: 3px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #eeaf30; 
+}
+
+/* Media Queries for Mobile */
+@media only screen and (min-width: 600px) {
+  .container {
+    flex-direction: row;
+  }
+
+  .button-container {
+    width: 30%;
+  }
+
+  .text-container {
+    width: 70%;
+  }
+
+  textarea {
+    height: 80vh;
+  }
+}
+
+
+footer {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 10px;
+  background-color: #021b21;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+
 }
