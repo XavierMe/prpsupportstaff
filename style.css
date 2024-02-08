@@ -151,6 +151,9 @@ button#aidenied:hover {
   background-color: #e97a13;
 }
 
+special-btn{
+  background-color: #97969659;
+}
 
 hr {
   border: none;
