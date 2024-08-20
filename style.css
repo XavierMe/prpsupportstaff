@@ -2,12 +2,15 @@ body {
   margin: 0;
   padding: 0;
   background-color: #021b21;
+  color: white;
+  font-family: Arial, sans-serif;
 }
 
 .container {
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   position: relative;
+  padding: 20px;
 }
 
 .button-container {
@@ -15,28 +18,33 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%; 
+  width: 100%;
 }
 
 .button-container button {
-  display: block;
   width: 90%;
-  height: 40px;
+  height: 45px;
   margin-bottom: 10px;
   border-radius: 10px;
   border: none;
-  background-color: #0b505f;
+  background-color: #0b3841;
   color: white;
-  font-size: 1.1em; 
+  font-size: 1.1em;
   font-weight: bold;
-  font-family: Arial, sans-serif;
   cursor: pointer;
   transition: background-color 0.2s ease;
 }
 
 .button-container button:hover {
   background-color: #054452;
+}
 
+.special-btn {
+  background-color: #1f5966 !important;
+}
+
+.special-btn:hover{
+  background-color: #11424d7c !important;
 }
 
 .text-container {
@@ -44,115 +52,68 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%; 
+  width: 100%;
   padding: 20px;
 }
 
 .top-buttons {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   width: 100%;
   margin-bottom: 10px;
 }
 
 textarea {
   width: 100%;
-  height: 60vh; 
+  height: 60vh;
   padding: 10px;
   border-radius: 15px;
   border: 1px solid #021b21;
   background-color: #052127;
   color: white;
-  font-size: 1.3em; 
+  font-size: 1.3em;
   resize: none;
 }
 
-button#clear-button {
-  display: block;
-  float: right;
-  width: 33%;
+button#clear-button,
+button#copy-button,
+button#denied,
+button#aidenied {
+  width: 22%;
   height: 40px;
-  margin-top: 10px;
   border-radius: 5px;
   border: none;
-  background-color: #f23d4c;
   color: white;
-  font-size: 16px;
   font-weight: bold;
-  font-family: Arial, sans-serif;
   cursor: pointer;
   transition: background-color 0.2s ease;
+  font-size: 0.9em;
+}
+
+button#clear-button {
+  background-color: #f23d4c;
 }
 
 button#clear-button:hover {
-  background-color: #c94a55;}
+  background-color: #c94a55;
+}
 
 button#copy-button {
-  display: block;
-  float: right;
-  width: 33%;
-  height: 40px;
-  margin-top: 10px;
-  border-radius: 5px;
-  border: none;
   background-color: #06b66c;
-  color: white;
-  font-size: 16px;
-  font-weight: bold;
-  font-family: Arial, sans-serif;
-  cursor: pointer;
-  transition: background-color 0.2s ease;
 }
 
 button#copy-button:hover {
   background-color: #037e4b;
 }
 
-button#denied {
-  font-size: 1em; 
-  display: block;
-  float: right;
-  width: 15%;
-  height: 40px;
-  margin-top: 10px;
-  border-radius: 5px;
-  border: none;
-  background-color: #d36b09;
-  color: white;
-  font-weight: bold;
-  font-family: Arial, sans-serif;
-  cursor: pointer;
-  transition: background-color 0.2s ease;
-}
-
-button#denied:hover {
-  background-color: #e97a13;
-}
-
+button#denied,
 button#aidenied {
-  font-size: 1em; 
-  display: block;
-  float: right;
-  width: 15%;
-  height: 40px;
-  margin-top: 10px;
-  border-radius: 5px;
-  border: none;
   background-color: #d36b09;
-  color: white;
-  font-weight: bold;
-  font-family: Arial, sans-serif;
-  cursor: pointer;
-  transition: background-color 0.2s ease;
 }
 
+button#denied:hover,
 button#aidenied:hover {
   background-color: #e97a13;
-}
-
-special-btn {
-  background-color: #97969659;
 }
 
 hr {
@@ -160,39 +121,34 @@ hr {
   border-top: 1px solid #fff;
   width: 90%;
   margin: 10px auto;
-  padding-bottom: 10px;
 }
-
 
 ::-webkit-scrollbar {
   width: 5px;
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px #021b21; 
+  box-shadow: inset 0 0 5px #021b21;
   border-radius: 3px;
 }
- 
-/* Handle */
+
 ::-webkit-scrollbar-thumb {
-  background: #eeaf30; 
+  background: #eeaf30;
   border-radius: 3px;
 }
 
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #eeaf30; 
+  background: #eeaf30;
 }
 
-/* Media Queries for Mobile */
+/* Larger screens */
 @media only screen and (min-width: 600px) {
   .container {
     flex-direction: row;
   }
 
   .button-container {
-    width: 30%;
+    width: 25%;
   }
 
   .text-container {
@@ -202,8 +158,38 @@ hr {
   textarea {
     height: 80vh;
   }
+
+  .top-buttons button {
+    width: 20%;
+    font-size: 1em;
+  }
 }
 
+/* Mobile screens */
+@media only screen and (max-width: 599px) {
+  .container {
+    align-items: center;
+  }
+
+  .button-container {
+    align-items: center; 
+  }
+
+  .top-buttons {
+    gap: 10px;
+  }
+
+  .top-buttons button {
+    width: 100%;
+  }
+
+  button#clear-button,
+  button#copy-button,
+  button#denied,
+  button#aidenied {
+    font-size: 1em;
+  }
+}
 
 footer {
   position: fixed;
